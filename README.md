@@ -16,10 +16,10 @@ window.addEventListener("keydown", function(e) {
   }
 });
 ```
-## Util.php
+## PHP Libs
 First, check with your provider to see if include of http is enabled on your server if you with to load over GitHub.
 Second, make sure to use the actual raw URL in your include, for if you use a service like RawGit, the file will be interpreted on the server on not be accessible to you.
 Alternatively, you can download the file.
-Check out [the file](php/util.php) to the the variables and functions reference.
+Check out [the list](php/) see all the different files.
 
 ~Nektro
