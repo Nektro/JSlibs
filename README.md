@@ -14,7 +14,7 @@ window.addEventListener("keydown", function(e) {
       // Jump logic
       break;
   }
-}, true);
+});
 ```
 
 ~Nektro
