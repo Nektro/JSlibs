@@ -5,4 +5,16 @@ A group of JavaScript libraries that you might use. Or not. You do you :)
 You are free to download, use, modify, and all that with this code. Attribtion would be nice, but not required. At the moment these are made for me in my free time.
 That said, these are provided on an "as is" basis, but feel free to comment and pull.
 
+## Keys.js
+Use this to get the key codes for most of the Keyboard for all your game and shortcut listeners.
+```javascript
+window.addEventListener("keydown", function(e) {
+  switch (e.keyCode) {
+    case Keys.ARROW_UP:
+      // Jump logic
+      break;
+  }
+}, true);
+```
+
 ~Nektro
