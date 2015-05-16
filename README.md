@@ -1,5 +1,5 @@
 # JSlibs
-A group of JavaScript libraries that you might use. Or not. You do you :)
+A group of libraries that you might use on your website. Or not. You do you :)
 
 ## License & About
 You are free to download, use, modify, and all that with this code. Attribtion would be nice, but not required. At the moment these are made for me in my free time.
@@ -16,5 +16,10 @@ window.addEventListener("keydown", function(e) {
   }
 });
 ```
+## Util.php
+First, check with your provider to see if include of http is enabled on your server if you with to load over GitHub.
+Second, make sure to use the actual raw URL in your include, for if you use a service like RawGit, the file will be interpreted on the server on not be accessible to you.
+Alternatively, you can download the file.
+Check out (the file)[php/util.php] to the the variables and functions reference.
 
 ~Nektro
