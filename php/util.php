@@ -76,7 +76,7 @@ function printJson($array) {
 /**
  * Minify CSS
  * Based on http://manas.tungare.name/software/css-compression-in-php/
- * Adapted under Creative Commons Attribution, Share-Alike.
+ * Shared under Creative Commons Attribution, Share-Alike.
  */
 function minifyCSS($css) {
   $b = preg_replace('!/\*[^*]*\*+([^/][^*]*\*+)*/!', '', $css);
