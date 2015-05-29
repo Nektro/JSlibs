@@ -1,4 +1,4 @@
-# JSlibs
+# WebLibs
 A group of libraries that you might use on your website. Or not. You do you :)
 
 ## License & About
