@@ -34,6 +34,18 @@ function Pencil2 (context) {
   this.arc.fill = function (color, x, y, r, sa, ea, acl) {
     this.con.fillStyle = color;
     this.arc.draw(x,y,r,sa,ea,acl);
+    this.con.fill();
   };
   
+  this.circle = {};
+  this.circle.stroke = function (color, x, y, r) {
+    this.con.strokeStyle = color;
+    this.arc.draw(x,y,r,0,Math.PI*2,false);
+    this.con.stroke();
+  };
+  this.circle.fill = function (color, x, y, r) {
+    this.con.fillStyle = color;
+    this.arc.draw(x,y,r,0,Math.PI*2,false);
+    this.con.fill();
+  };
 }
