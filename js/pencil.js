@@ -1,4 +1,4 @@
-function Pencil2 (context) {
+function Pencil (context) {
   this.con = context;
   this.rect = {};
   this.rect.draw = function (x, y, width, height) {
