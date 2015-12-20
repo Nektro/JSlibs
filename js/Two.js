@@ -1,11 +1,18 @@
 "use strict";
 class TWO {
-  constructor(canvas) {
-    // @param this.c should be instanceof CanvasRenderingContext2D
-    this.c = canvas.getContext('2d');
+  constructor(canvas,mode) {
+    this.a = canvas;
+    this.m = mode; // switch between `2d` and `webgl`
+    this.c = canvas.getContext(mode);
   }
   clear() {
-    this.c.clearRect(0, 0, this.c.canvas.width, this.c.canvas.height);
+    if (this.m === '2d')
+      this.c.clearRect(0, 0, this.c.canvas.width, this.c.canvas.height);
+    if (this.m === 'webgl') {
+      this.g.clearColor(0.0, 0.0, 0.0, 0.0);
+      this.g.clearDepth(1.0);
+      this.g.enable(this.g.DEPTH_TEST);
+    }
   }
   draw(s, m, c, x, y, p1, p2) {
     this.c.beginPath();
