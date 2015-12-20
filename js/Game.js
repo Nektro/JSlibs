@@ -9,8 +9,11 @@ class Game {
     this.isRunning = false;
     this.lastTime = new Date().getTime();
   }
-  run() {
+  start() {
     this.isRunning = true;
+    this.run();
+  }
+  run() {
     if (this.isRunning) {
       var t = new Date().getTime();
       this.everyE();
