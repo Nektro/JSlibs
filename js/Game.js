@@ -13,6 +13,9 @@ class Game {
     this.isRunning = true;
     this.run();
   }
+  stop() {
+    this.isRunning = false;
+  }
   run() {
     if (this.isRunning) {
       var t = new Date().getTime();
