@@ -33,7 +33,7 @@ class Game {
 class GameState {
   // (function update, function render)
   constructor(u,r) {
-    this.update = u | function(){};
-    this.render = r | function(){};
+    this.update = u;
+    this.render = r;
   }
 }

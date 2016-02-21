@@ -14,8 +14,8 @@ class Rectangle {
     // @see https://developer.mozilla.org/en-US/docs/Games/Techniques/2D_collision_detection#Axis-Aligned_Bounding_Box
     return (this.x < aabb.x + aabb.w && this.x + this.w > aabb.x && this.y < aabb.y + aabb.h && this.h + this.y > aabb.y);
   }
-  draw(two, color) {
-    two.draw('rect', 'stroke', color, this.x, this.y, this.w, this.h);
+  draw(two, color, style) {
+    two.draw('rect', style | 'stroke', color, this.x, this.y, this.w, this.h);
   }
 }
 class Vector {
@@ -37,7 +37,7 @@ class Vector {
   add(v) {
     return new Vector(this.x + v.x, this.y + v.y, this.z + v.z);
   }
-  // @param instanceof Vector
+  // @param v instanceof Vector
   subtract(v) {
     return new Vector(this.x - v.x, this.y - v.y, this.z - v.z);
   }
