@@ -13,7 +13,13 @@ class TWO {
   draw(s, m, c, x, y, p1, p2) {
     this.c.beginPath();
     switch (s) {
-      case 'rect': this.c.rect(x, y, p1, p2); break;
+      case 'rect':
+        this.c.rect(x, y, p1, p2);
+      break;
+      case 'line':
+        this.c.moveTo(x, y);
+        this.c.lineTo(p1, p2);
+        m = 'stroke';
       default:
         console.error('Invalid shape to draw: ' + s);
     }
