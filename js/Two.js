@@ -20,6 +20,7 @@ class TWO {
         this.c.moveTo(x, y);
         this.c.lineTo(p1, p2);
         m = 'stroke';
+      break;
       default:
         console.error('Invalid shape to draw: ' + s);
     }
